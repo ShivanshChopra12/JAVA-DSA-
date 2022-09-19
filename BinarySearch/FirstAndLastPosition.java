@@ -1,10 +1,10 @@
 package binarySearch;
 
 import java.util.Arrays;
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 public class FirstAndLastPosition {
-//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		int nums[] = { 1, 2, 3, 4, 5, 6, 7, 7, 8, 8, 9 };
 		int target = 7;
 		System.out.println(Arrays.toString(searchRange(nums, target)));
