@@ -20,7 +20,7 @@ public class OrderAgnosticBS {
 			if (arr[mid] == target) {
 				return mid;
 			}
-
+			
 			if (isASC) {
 				if (target < arr[mid]) {
 					end = mid - 1;
