@@ -13,7 +13,6 @@ public class JaggedMountainPeaak {
 		int ans = findPeakElement(arr);
 		System.out.println("position of element : " + ans);
 		System.out.println("value at this position is: " + arr[ans]);
-
 	}
 
 	public static int findPeakElement(int[] nums) {

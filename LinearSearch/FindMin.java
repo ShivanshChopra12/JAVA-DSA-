@@ -18,5 +18,4 @@ public class FindMin {
 		}
 		return ans;
 	}
-
 }
