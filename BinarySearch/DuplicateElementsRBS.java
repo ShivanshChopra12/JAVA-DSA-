@@ -1,20 +1,18 @@
 package binarySearch;
 
-// https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
-
-public class RotatedBinarySearch {
+public class DuplicateElementsRBS {
 
 	public static void main(String[] args) {
-		int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
+		int[] arr = { 4, 5, 6, 6, 7, 7, 7, 0, 1, 2, 2 };
 		int target = 2;
 		int ans = search(arr, target);
-		System.out.println("Pivot position is : " + FindPivot(arr));
+		System.out.println("Pivot position is : " + FindPivotWithDuplicates(arr));
 		System.out.println("Target position is " + ans);
 
 	}
 
 	public static int search(int[] nums, int target) {
-		int pivot = FindPivot(nums);
+		int pivot = FindPivotWithDuplicates(nums);
 
 		if (pivot == -1) {
 			// if pivot is -1 , that means array is not rotated , just perform normal binary
@@ -35,22 +33,40 @@ public class RotatedBinarySearch {
 		return BinarySearch(nums, target, pivot + 1, nums.length - 1);
 	}
 
-	static int FindPivot(int[] arr) {
+	static int FindPivotWithDuplicates(int[] arr) {
 		int start = 0;
 		int end = arr.length - 1;
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
-			// 4 cases here
+
 			if (mid < end && arr[mid] > arr[mid + 1]) {
 				return mid;
 			}
 			if (mid > start && arr[mid] < arr[mid - 1]) {
 				return mid - 1;
 			}
-			if (arr[mid] <= arr[start]) {
-				end = mid - 1;
-			} else {
+
+			// if element at start, mid , end are same, just remove the duplicate elements
+			if (arr[mid] == arr[start] && arr[mid] == arr[end]) {
+				// skipping the duplicates
+
+				// check if start is pivot
+				if (arr[start] > arr[start + 1]) {
+					return start;
+				}
+				start++;
+
+				// check if end is pivot
+				if (arr[end] < arr[end - 1]) {
+					return end - 1;
+				}
+				end--;
+			}
+			// left side is sorted , so pivot should be in right
+			else if (arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
 				start = mid + 1;
+			} else {
+				end = mid - 1;
 			}
 		}
 		return -1;
