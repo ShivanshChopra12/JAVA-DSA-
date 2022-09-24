@@ -1,9 +1,5 @@
 package linearSearch;
 
-import java.util.Arrays;
-
-//import java.util.Arrays;
-
 public class MaxFrom2DArray {
 
 	public static void main(String[] args) {
