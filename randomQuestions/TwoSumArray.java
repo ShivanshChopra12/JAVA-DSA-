@@ -1,6 +1,6 @@
 package randomQuestions;
 //https://leetcode.com/problems/two-sum/submissions/
-
+//brute force approach, Use Map instead of this
 public class TwoSumArray {
 
 	public static void main(String[] args) {
