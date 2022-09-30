@@ -8,6 +8,7 @@ public class JaggedMountainPeaak {
 	 * return either index number 4 where the peak element is 6, or index number 10
 	 * where the peak element is 9.
 	 */
+	
 	public static void main(String[] args) {
 		int arr[] = { 2, 3, 4, 5, 6, 3, 2, 1, 7, 8, 9, 2, 0 };
 		int ans = findPeakElement(arr);
