@@ -14,7 +14,7 @@ public class RotationCount {
 		int pivot = FindPivot(arr);
 		return pivot + 1;
 	}
-
+	
 	static int FindPivot(int[] arr) {
 		int start = 0;
 		int end = arr.length - 1;
