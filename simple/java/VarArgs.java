@@ -1,4 +1,4 @@
-package shivansh;
+package simple.java;
 
 import java.util.Arrays;
 
