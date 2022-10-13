@@ -1,5 +1,4 @@
 package simple.java;
-
 import java.util.*;
 
 public class MultiAL {
