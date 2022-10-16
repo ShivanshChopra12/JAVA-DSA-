@@ -15,9 +15,9 @@ public class containerWithWater {
 		while (l < r) {
 			int lh = height[l];
 			int rh = height[r];
-			int min_h = Math.min(lh, rh); // find min btwn lh and rh
+			int min_h = Math.min(lh, rh); // find min btwn lh and rh //min height bcz max water isi height tak bhrega
 			max = Math.max(max, min_h * (r - l));
-			// area=min_height * (r-l) //min height bcz max water isi height tak bhrega
+			// area=min_height * (r-l)
 			// next step , whichever height is smaller just go to next value for checking
 			// right will go behind and left will go right side
 			if (lh < rh)
