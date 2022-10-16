@@ -22,7 +22,7 @@ public class RowColMatrix {
 			}
 		}
 		if (matrix[r][c] < target) {
-			// go to next row bcz all elements in this row are smaller
+			// go to next row because all elements in this row are smaller
 			r++;
 		} else {
 			c--;
