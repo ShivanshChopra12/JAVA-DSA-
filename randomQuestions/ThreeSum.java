@@ -22,8 +22,8 @@ public class ThreeSum {
 				int sum = nums[j] + nums[k];
 				if (sum == -nums[i]) { // sum of k and j = - i then we can say i+j+k=0
 					res.add(Arrays.asList(nums[i], nums[j], nums[k]));
-					j++;
 					k--;
+					j++;
 				} else if (sum > -nums[i]) // if sum is greater that means we have to reduce so k-- , bcz array is
 											// ascending , so k-- will reduce the sum
 					k--;
