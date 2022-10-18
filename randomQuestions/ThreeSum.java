@@ -1,5 +1,6 @@
 package randomQuestions;
 
+//https://leetcode.co/problems/3sum/
 import java.util.*;
 
 public class ThreeSum {
