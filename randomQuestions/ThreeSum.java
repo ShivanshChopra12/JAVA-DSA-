@@ -2,7 +2,6 @@ package randomQuestions;
 
 //https://leetcode.co/problems/3sum/
 import java.util.*;
-
 public class ThreeSum {
 
 	public static void main(String[] args) {
