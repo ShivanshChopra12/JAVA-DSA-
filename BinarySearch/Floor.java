@@ -1,7 +1,6 @@
 package binarySearch;
 
 import java.util.Arrays;
-
 public class Floor {
 	public static void main(String[] args) {
 		int arr[] = { -18, -10, 0, 3, 5, 9, 12, 19, 20, 140 };
