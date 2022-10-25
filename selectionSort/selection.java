@@ -1,7 +1,6 @@
 package selectionSort;
 
 import java.util.Arrays;
-
 public class selection {
 
 	public static void main(String[] args) {
