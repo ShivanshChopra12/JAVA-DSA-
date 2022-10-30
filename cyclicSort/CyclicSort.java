@@ -9,11 +9,10 @@ public class CyclicSort {
 		sort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
-
 	// 0th position pe 1, 1st position pe 2 ; means value at a given position must
 	// be on value -1 position
 	public static void sort(int[] arr) {
-		int i = 0; 
+		int i = 0;
 		while (i < arr.length) {
 			int correct = arr[i] - 1;
 			if (arr[i] < arr.length && arr[i] != arr[correct]) {
