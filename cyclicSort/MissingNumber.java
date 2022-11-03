@@ -8,7 +8,6 @@ public class MissingNumber {
 		System.out.println(missingnumber(arr));
 
 	}
-
 	public static int missingnumber(int[] arr) {
 		int i = 0;
 		while (i < arr.length) {
