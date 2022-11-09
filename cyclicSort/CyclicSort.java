@@ -29,5 +29,4 @@ public class CyclicSort {
 		arr[first] = arr[second];
 		arr[second] = temp;
 	}
-
 }
