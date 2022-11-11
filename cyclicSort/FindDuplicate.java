@@ -3,12 +3,13 @@ package cyclicSort;
 public class FindDuplicate {
 
 	public static void main(String[] args) {
-		int nums[]= {1,3,4,2,2};
-		
+		int nums[] = { 1, 3, 4, 2, 2 };
+
 		System.out.println(findDuplicate(nums));
 	}
+
 	public static int findDuplicate(int[] arr) {
-		int i = 0	;
+		int i = 0;
 		while (i < arr.length) {
 			if (arr[i] != i + 1) {
 				int correct = arr[i] - 1;

@@ -16,7 +16,7 @@ public class CyclicSort {
 		int i = 0;
 		while (i < arr.length) {
 			int correct = arr[i] - 1;
-			if (arr[i] < arr.length && arr[i] != arr[correct]) {
+			if (arr[i] < arr.length && arr[i] != arr[correct]) { //arr[i] != i+1 we can use this too
 				swap(arr, i, correct); //{2,5,3,1,4}, {5,2,3,1,4},{4,2,3,1,5},{1,2,3,4,5}
 			} else {
 				i++;
