@@ -9,7 +9,6 @@ public class selection {
 		selectionSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
-
 	// find the maximum in array in the remaining array and swap it with correct
 	// index
 	static void selectionSort(int[] arr) {
