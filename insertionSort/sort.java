@@ -22,7 +22,7 @@ public class sort {
 					break;
 				}
 			}
-		}
+			}
 	}
 
 	public static void swap(int[] arr, int j) {
