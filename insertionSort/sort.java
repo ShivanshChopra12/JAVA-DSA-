@@ -8,7 +8,6 @@ public class sort {
 		InsertionSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
-
 //let i=1(5), j =i+1=2(1) ,if j-1>j ,swap j and j-1, j-1=1(5), 5>1 so swap , now arr= 4,1,5,2,0, j-- 
 	// now j=1(1),j-1=0(4) if j-1>j(4>1) then swap ,so now arr = 1,4,5,2,0
 	// ,similarly continue this
