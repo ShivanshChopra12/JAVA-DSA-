@@ -7,10 +7,10 @@ public class SetMismatch {
 
 	public static void main(String[] args) {
 		int arr[]= {1,2,2,4};
-		System.out.println (Arrays.toString(missingnumber(arr)));
+		System.out.println (Arrays.toString(findErrorNums(arr)));
 	}
 
-	public static int[] missingnumber(int[] arr) {
+	public static int[] findErrorNums(int[] arr) {
 		int i = 0;
 		while (i < arr.length) {
 			int correct = arr[i] - 1;
