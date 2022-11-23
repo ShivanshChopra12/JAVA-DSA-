@@ -1,5 +1,6 @@
 package cyclicSort;
 
+//https://leetcode.com/problems/find-the-duplicate-number/
 public class FindDuplicate {
 
 	public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class FindDuplicate {
 			if (arr[i] != i + 1) {
 				int correct = arr[i] - 1;
 				if (arr[i] < arr.length && arr[i] != arr[correct]) {
-					swap(arr, i, correct);
+					swap(arr, i, correct); // 1,2,3,4,2
 				} else {
 					return arr[i];
 				}
