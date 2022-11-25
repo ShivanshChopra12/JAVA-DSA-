@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Arrays;
+
 public class SBuilder {
 
 	public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class SBuilder {
 		a.reverse();
 		System.out.println(a);
 		String name= "Shivansh";
-		System.out.println(name.toCharArray());
+		System.out.println(Arrays.toString(name.toCharArray()));
 	}
 
 }
