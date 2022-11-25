@@ -13,7 +13,9 @@ public class SBuilder {
 							// modified again and again
 		}
 		System.out.println(a);
-
+		
+		a.reverse();
+		System.out.println(a);
 	}
 
 }
