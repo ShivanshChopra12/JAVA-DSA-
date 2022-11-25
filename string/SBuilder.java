@@ -1,0 +1,18 @@
+package string;
+
+public class SBuilder {
+
+	public static void main(String[] args) {
+		StringBuilder a = new StringBuilder();
+
+		// String series = "";
+		for (int i = 0; i < 26; i++) {
+			char ch = (char) ('a' + i);
+			// series = series + ch; // this is making new objects for each a, ab, abc
+			a.append(ch); // here we are using stringbuilder , only one object will be created and
+							// modified again and again
+		}
+
+	}
+
+}
