@@ -10,7 +10,8 @@ public class Palindrome {
 		if (str == null || str.length() == 0) {
 			return true;
 		}
-		// length() itself is calling .length
+		// length() itself is calling .length internally but we have to use length() as
+		// a method for string
 		str = str.toLowerCase();
 		for (int i = 0; i <= str.length() / 2; i++) {
 			char start = str.charAt(i);
