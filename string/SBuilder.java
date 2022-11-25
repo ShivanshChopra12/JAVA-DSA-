@@ -12,6 +12,7 @@ public class SBuilder {
 			a.append(ch); // here we are using stringbuilder , only one object will be created and
 							// modified again and again
 		}
+		System.out.println(a);
 
 	}
 
