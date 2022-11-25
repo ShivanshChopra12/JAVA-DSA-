@@ -18,8 +18,9 @@ public class SBuilder {
 		
 		a.reverse();
 		System.out.println(a);
-		String name= "Shivansh";
+		String name= "Shivansh Chopra";
 		System.out.println(Arrays.toString(name.toCharArray()));
+		System.out.println(Arrays.toString(name.split(" ")));
 	}
 
 }
