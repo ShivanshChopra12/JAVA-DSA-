@@ -1,5 +1,7 @@
 package string;
 
+import java.util.ArrayList;
+
 public class Operators {
 
 	public static void main(String[] args) {
@@ -10,6 +12,6 @@ public class Operators {
 		System.out.println("a" + 3); // integer will be converted to Integer(Wrapper class)
 										// which calls toString()
 
-		System.out.println("Shivansh" + 3);
+		System.out.println("Shivansh" + new ArrayList<>());
 	}
 }
