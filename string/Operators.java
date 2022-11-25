@@ -13,5 +13,13 @@ public class Operators {
 										// which calls toString()
 
 		System.out.println("Shivansh" + new ArrayList<>());
+		System.out.println("Shivansh" + new Integer(56));
+
+		// System.out.println(new ArrayList<>() + new Integer(56)); //Can't run bcz
+			// operator + is only defined for primitives and String
+			//There should be one String object eg;
+		System.out.println(new ArrayList<>() +""+ new Integer(56));
+
+		
 	}
 }
