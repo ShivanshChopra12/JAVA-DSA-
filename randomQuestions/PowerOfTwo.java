@@ -13,6 +13,7 @@ public class PowerOfTwo {
 		}
 		if (n == 1) {
 			return true;
+			
 		}
 		if (n % 2 == 1) {
 			return false;
