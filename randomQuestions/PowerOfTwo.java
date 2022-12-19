@@ -6,7 +6,6 @@ public class PowerOfTwo {
 		int a = 19;
 		System.out.println(isPowerOfTwo(a));
 	}
-
 	public static boolean isPowerOfTwo(int n) {
 		if (n < 1) {
 			return false;
