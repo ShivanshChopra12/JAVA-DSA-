@@ -18,6 +18,7 @@ public class CookiesGreedy {
 			} else {
 				b_pointer++;			}
 		}
+	
 		return a_pointer;
 	}
 }
