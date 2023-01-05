@@ -16,9 +16,10 @@ public class CookiesGreedy {
 				a_pointer++;
 				b_pointer++;
 			} else {
-				b_pointer++;			}
+				b_pointer++;		
+				}
 		}
-	
+
 		return a_pointer;
 	}
 }
