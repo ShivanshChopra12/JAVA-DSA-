@@ -18,13 +18,13 @@ public class Prime {
 
 		}
 		int c = 2;
-		while (c * c <= n) {
-			if (n % c == 00) {
+		while (c*c <= n) {
+			if (n % c == 0) {
 				return false;
 			}
 			c++;
 		}
 		// if (c*c>n) {return true;} return false; This line can be written as below
-		return (c * c > n);
+		return (c*c > n);
 	}
 }

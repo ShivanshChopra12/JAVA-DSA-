@@ -12,7 +12,7 @@ public class Armstrong {
 		System.out.println(ans);
 		in.close();
 
-		System.out.print("All Armstrong no. btw 100 & 100 are :");
+		System.out.print("All Armstrong no. btw 100 & 1000 are :");
 		for (int i = 100; i < 1000; i++) {
 			if (isArmstrong(i)) {
 				System.out.print(i + " ");
