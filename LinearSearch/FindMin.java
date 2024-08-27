@@ -3,7 +3,7 @@ package linearSearch;
 public class FindMin {
 
 	public static void main(String[] args) {
-		int[] arr = { 23, 45, 67, 8, 9, 0, -2, 3 };
+		int[] arr = { 23, 45, 67, 8, 9, 0, -2, 3  };
 		System.out.println(min(arr));
 
 	}
